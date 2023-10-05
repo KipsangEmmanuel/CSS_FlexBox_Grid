@@ -1,0 +1,50 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a global font family */
+body {
+    font-family: 'Poppins', sans-serif; /* You can replace 'Poppins' with the actual font you're using */
+}
+
+/* Style the main container */
+.main {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr; 
+    grid-template-rows: repeat(3, auto); 
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background-color: #0d0d0e;
+
+}
+
+/* Style individual divs */
+.one {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3; 
+    background-color: #5e72e4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.two, .three, .four, .five, .six, .seven {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Apply different background colors to each div */
+.one { background-color: #141d56; }
+.two { background-color:#141d56; }
+.three { background-color:  #141d56; }
+.four { background-color:  #141d56; }
+.five { background-color: #141d56; }
+.six { background-color: #141d56; }
+.seven { background-color: #141d56; }
