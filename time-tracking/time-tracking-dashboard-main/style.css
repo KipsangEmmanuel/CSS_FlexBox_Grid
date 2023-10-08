@@ -1,50 +1,216 @@
-/* Reset some default styles */
-body, h1, p {
-    margin: 0;
-    padding: 0;
-}
+/* * {
+    margin: 0px;
+    padding: 0px;
+} */
 
-/* Apply a global font family */
-body {
-    font-family: 'Poppins', sans-serif; /* You can replace 'Poppins' with the actual font you're using */
-}
-
-/* Style the main container */
-.main {
-    display: grid;
-    grid-template-columns: auto 1fr 1fr; 
-    grid-template-rows: repeat(3, auto); 
-    gap: 10px;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 200px;
-    background-color: #0d0d0e;
-
-}
-
-/* Style individual divs */
-.one {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 3; 
-    background-color: #5e72e4;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.two, .three, .four, .five, .six, .seven {
-    background-color: white;
+.left-card{
+    background-color: rgb(22, 22, 54);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+.left-card-top{
+    background-color: rgb(45, 42, 186);
+    border-radius: 18px;
     padding: 20px;
-    text-align: center;
+    
+}
+.left-card-top > h4{
+    color: gray;
+}
+.left-card-top > h2{
+    color: white;
+}
+.left-card-bottom{
+    border-radius: 18px;
+    padding: 20px;
+}
+.left-card-bottom > h2{
+    color: white;
+}
+.left-card-bottom > h3{
+    color: gray;
 }
 
-/* Apply different background colors to each div */
-.one { background-color: #141d56; }
-.two { background-color:#141d56; }
-.three { background-color:  #141d56; }
-.four { background-color:  #141d56; }
-.five { background-color: #141d56; }
-.six { background-color: #141d56; }
-.seven { background-color: #141d56; }
+.second-card{
+    background-color: burlywood;
+    width: 200px;
+    border-radius: 10px;
+}
+.second-card-top{
+    display: flex;
+    justify-content: end;
+
+}
+.second-card-bottom{
+    background-color: rgb(22, 22, 54);
+    border-radius: 10px;
+}
+
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.work > h2{
+    color: white;
+}
+.nums > h2, h3{
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+/* hfh */
+.third-card{
+    background-color: rgb(127, 246, 155);
+    width: 200px;
+    border-radius: 10px;
+}
+.third-card-top{
+    display: flex;
+    justify-content: end;
+
+}
+.third-card-bottom{
+    background-color: rgb(22, 22, 54);
+    border-radius: 10px;
+}
+
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.work > h2{
+    color: white;
+}
+.nums > h2, h3{
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+/* hfh */
+.fourth-card{
+    background-color: rgb(117, 198, 227);
+    width: 200px;
+    border-radius: 10px;
+}
+.fourth-card-top{
+    display: flex;
+    justify-content: end;
+
+}
+.fourth-card-bottom{
+    background-color: rgb(22, 22, 54);
+    border-radius: 10px;
+}
+
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.work > h2{
+    color: white;
+}
+.nums > h2, h3{
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+
+
+
+/* hfh */
+.fifth-card{
+    background-color: #7a75e3;
+    width: 200px;
+    border-radius: 10px;
+}
+.fifth-card-top{
+    display: flex;
+    justify-content: end;
+
+}
+.fifth-card-bottom{
+    background-color: rgb(22, 22, 54);
+    border-radius: 10px;
+}
+
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.work > h2{
+    color: white;
+}
+.nums > h2, h3{
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+/* hfh */
+.sixth-card{
+    background-color: #e3758f;
+    width: 200px;
+    border-radius: 10px;
+}
+.sixth-card-top{
+    display: flex;
+    justify-content: end;
+
+}
+.sixth-card-bottom{
+    background-color: rgb(22, 22, 54);
+    border-radius: 10px;
+}
+
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.work > h2{
+    color: white;
+}
+.nums > h2, h3{
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+/* hfh */
+.seventh-card{
+    background-color: hsl(64, 66%, 67%);
+    width: 200px;
+    border-radius: 10px;
+}
+.seventh-card-top{
+    display: flex;
+    justify-content: end;
+
+}
+.seventh-card-bottom{
+    background-color: rgb(22, 22, 54);
+    border-radius: 10px;
+}
+
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.work > h2{
+    color: white;
+}
+.nums > h2, h3{
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+
+
