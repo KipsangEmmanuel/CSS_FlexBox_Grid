@@ -1,15 +1,36 @@
-/* * {
-    margin: 0px;
-    padding: 0px;
-} */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(22, 22, 54);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 'leftc secondc thirdc fourthc'
+    'leftc fifthc sixthc seventhc';
+    gap: 20px; 
+    width: 80%;
+    height: 60%;
+}
 
 .left-card{
-    background-color: rgb(22, 22, 54);
+    background-color: #303075;
     border-radius: 10px;
     width: 200px;
+    grid-area: leftc;
+
 }
 .left-card-top{
-    background-color: rgb(45, 42, 186);
+    background-color: hsl(246, 80%, 60%);
     border-radius: 18px;
     padding: 20px;
     
@@ -26,24 +47,29 @@
 }
 .left-card-bottom > h2{
     color: white;
+    margin: 10px;
 }
 .left-card-bottom > h3{
     color: gray;
+    margin-left: 0px;
 }
 
 .second-card{
     background-color: burlywood;
     width: 200px;
     border-radius: 10px;
+    grid-area: secondc;
 }
 .second-card-top{
     display: flex;
     justify-content: end;
+    height: 25%;
 
 }
 .second-card-bottom{
-    background-color: rgb(22, 22, 54);
+    background-color: #303075;
     border-radius: 10px;
+    height: 75%;
 }
 
 .work{
@@ -64,15 +90,18 @@
     background-color: rgb(127, 246, 155);
     width: 200px;
     border-radius: 10px;
+    grid-area: thirdc;
 }
 .third-card-top{
     display: flex;
     justify-content: end;
+    height: 25%;
 
 }
 .third-card-bottom{
-    background-color: rgb(22, 22, 54);
+    background-color: #303075;
     border-radius: 10px;
+    height: 75%;
 }
 
 .work{
@@ -94,15 +123,19 @@
     background-color: rgb(117, 198, 227);
     width: 200px;
     border-radius: 10px;
+    grid-area: fourthc;
+
 }
 .fourth-card-top{
     display: flex;
     justify-content: end;
+    height: 25%;
 
 }
 .fourth-card-bottom{
-    background-color: rgb(22, 22, 54);
+    background-color: #303075;
     border-radius: 10px;
+    height: 75%;
 }
 
 .work{
@@ -127,15 +160,18 @@
     background-color: #7a75e3;
     width: 200px;
     border-radius: 10px;
+    grid-area: fifthc;
 }
 .fifth-card-top{
     display: flex;
     justify-content: end;
+    height: 25%;
 
 }
 .fifth-card-bottom{
-    background-color: rgb(22, 22, 54);
+    background-color: #303075;
     border-radius: 10px;
+    height: 75%;
 }
 
 .work{
@@ -157,15 +193,18 @@
     background-color: #e3758f;
     width: 200px;
     border-radius: 10px;
+    grid-area: sixthc;
 }
 .sixth-card-top{
     display: flex;
     justify-content: end;
+    height: 25%;
 
 }
 .sixth-card-bottom{
-    background-color: rgb(22, 22, 54);
+    background-color: #303075;
     border-radius: 10px;
+    height: 75%;
 }
 
 .work{
@@ -187,15 +226,18 @@
     background-color: hsl(64, 66%, 67%);
     width: 200px;
     border-radius: 10px;
+    grid-area: seventhc;
 }
 .seventh-card-top{
     display: flex;
     justify-content: end;
+    height: 25%;
 
 }
 .seventh-card-bottom{
-    background-color: rgb(22, 22, 54);
+    background-color: #303075;
     border-radius: 10px;
+    height: 75%;
 }
 
 .work{
